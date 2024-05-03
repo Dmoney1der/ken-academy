@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Soccer Academy</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body id="myPage">
+    <!-- Sidebar on click -->
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Teams">Teams <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Youth Team</a>
+                <a href="#" class="w3-bar-item w3-button">Junior Team</a>
+                <a href="#" class="w3-bar-item w3-button">Senior Team</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Events">Events <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Tournaments</a>
+                <a href="#" class="w3-bar-item w3-button">Training Camps</a>
+                <a href="#" class="w3-bar-item w3-button">Friendly Matches</a>
+            </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Gallery</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+        <a href="#" class="w3-bar-item w3-button">Teams</a>
+        <a href="#" class="w3-bar-item w3-button">Events</a>
+        <a href="#" class="w3-bar-item w3-button">Gallery</a>
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+        <a href="#" class="w3-bar-item w3-button">Search</a>
+    </div>
+</div>    <!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+  <h1>Welcome to Soccer Academy</h1>
+        <p>Train with the best. Join us now!</p>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="regsiter">Join the Academy</button>
+  </div>
+</div>
+<div class="w3-row w3-border">
+  <div class="w3-half w3-container w3-blue w3-border">
+    <h5>w3-half</h5>  
+    <p>The w3-half class uses half (50%) of the screen window.</p>
+    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+  </div>
+  <div class="w3-half w3-container">
+    <h5>w3-half</h5>  
+  </div>
+</div>
+<br>
+    <!-- Section with image and text -->
+<div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="w3-container w3-center">
+  <hr>
+  <h3>Paper-like Cards with Shadows</h3>
+</div>
+
+<div class="w3-row-padding"> 
+
+<div class="w3-third">
+<div class="w3-card">
+  <img src="/w3images/car.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  <p>w3-card</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-4">
+  <img src="/w3images/car.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  <p>w3-card-4</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-4">
+  <img src="/w3images/car.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  <p>w3-card-4</p>
+  </div>
+</div>
+</div>
+</div>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-34da0ca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="34da0ca" data-element_type="section" id="Programs" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no" bis_skin_checked="1">
+					<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-a4c0048" data-id="a4c0048" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-74e4b1c elementor-widget elementor-widget-heading" data-id="74e4b1c" data-element_type="widget" data-widget_type="heading.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<h2 class="elementor-heading-title elementor-size-default">Our Programs</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b63118c elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="b63118c" data-element_type="widget" data-widget_type="divider.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-divider" bis_skin_checked="1">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1edd4fb elementor-widget elementor-widget-text-editor" data-id="1edd4fb" data-element_type="widget" data-widget_type="text-editor.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+							<p><span style="color: #ffffff;">Asante Soccer Academy offers a number of different programs, suitable to all ages and abilities. Explore our programs to find the one that is most suitable to you and your needs.</span></p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5f86a9e" data-id="5f86a9e" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-b9fe05f elementor-align-left elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b9fe05f" data-element_type="widget" data-widget_type="icon-list.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<link rel="stylesheet" href="https://asanteacademy.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://asanteacademy.com/house-league/" bis_skin_checked="1">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-angle-right"></i>						</span>
+										<span class="elementor-icon-list-text">House League Programs</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://asanteacademy.com/mini-kickers/" bis_skin_checked="1">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-angle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Mini Kickers</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://asanteacademy.com/camp/" bis_skin_checked="1">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-angle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Summer Camps</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://asanteacademy.com/asante-elite/" bis_skin_checked="1">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-angle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Competitive Programs</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://asanteacademy.com/indoor/" bis_skin_checked="1">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-angle-right"></i>						</span>
+										<span class="elementor-icon-list-text">High Performance Training</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://asanteacademy.com/outdoor/" bis_skin_checked="1">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-angle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Private Training Sessions</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://asanteacademy.com/indoor/" bis_skin_checked="1">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-angle-right"></i>						</span>
+										<span class="elementor-icon-list-text">Goalkeeper Clinics</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-350d7e3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="350d7e3" data-element_type="section" id="events" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default" bis_skin_checked="1">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ae8753b" data-id="ae8753b" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-8a99f24 elementor-widget elementor-widget-heading" data-id="8a99f24" data-element_type="widget" data-widget_type="heading.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<h2 class="elementor-heading-title elementor-size-default">UPCOMING EVENTS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f3f5d6a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="f3f5d6a" data-element_type="widget" data-widget_type="divider.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-divider" bis_skin_checked="1">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e37f695 elementor-widget elementor-widget-html" data-id="e37f695" data-element_type="widget" data-widget_type="html.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core="" defer=""></script>
+<div class="elfsight-app-f7785d03-cb18-483d-821e-b64c37db768e" bis_skin_checked="1"><style>.eapps-events-calendar-f7785d03-cb18-483d-821e-b64c37db768e-custom-css-hook #fc-dom-1 { font-size: x-large; }</style><div id="eapps-events-calendar-f7785d03-cb18-483d-821e-b64c37db768e" class="RootLayout__RootComponent-sc-1doisyz-0 iGDhJF eapps-events-calendar-f7785d03-cb18-483d-821e-b64c37db768e-custom-css-hook" data-app="eapps-events-calendar" data-app-version="2.17.4" bis_skin_checked="1"><div class="EmbedRoot__EmbedRootComponent-sc-1c4b4pg-0 cxIbTV es-embed-root" bis_skin_checked="1"><div class="WidgetBackground__Container-sc-1ho7q3r-0 iczPsf" style="border-radius: 0px; padding: 40px;" bis_skin_checked="1"><div class="Background__Container-sc-4lq1r6-0 itZoLS" style="transition: none 0s ease 0s;" bis_skin_checked="1"><div class="Background__Base-sc-4lq1r6-1 egiTHk" style="display: block; background-color: rgb(0, 0, 0); border-radius: 0px;" bis_skin_checked="1"></div><div class="Background__Overlay-sc-4lq1r6-2 djWGwD" style="display: block; background-color: rgba(255, 255, 255, 0);" bis_skin_checked="1"></div></div><div class="WidgetBackground__ContentContainer-sc-1ho7q3r-1 jUKeJm" bis_skin_checked="1"><div class="WidgetBackground__Content-sc-1ho7q3r-2 ciCnpO" bis_skin_checked="1"><div class="jsx-84565474 eapp-events-calendar-events-calendar-component" bis_skin_checked="1"><div class="EventsCalendar__FontWrapper-sc-1pe10vn-0" bis_skin_checked="1"><div class="jsx-84565474 eapp-events-calendar-events-calendar-layout" bis_skin_checked="1"><div class="eapp-events-calendar-grid-component" bis_skin_checked="1"><div class="eapp-events-calendar-grid-group" bis_skin_checked="1"><div class="jsx-1967763651 eapp-events-calendar-grid-component" bis_skin_checked="1"><div class="eapp-events-calendar-grid-item" bis_skin_checked="1"><div class="jsx-673761447 eapp-events-calendar-grid-item-component" bis_skin_checked="1"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"Event","name":"House League","startDate":"2024-05-27","endDate":"2024-05-27","description":"The Asante Soccer Academy House League Program is a co-ed player development program that runs throughout the whole year. It is open to players between the ages of 5 and 13 that have the passion and desire to train and enhance their soccer skills. The purpose of this program is for players to have fun while also developing the fundamentals of soccer. Our mission is for the community to have access to affordable soccer programs, which provide the opportunity to discover and appreciate the game of soccer.","image":"https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/d7afc5c0-bdcb-42e2-880b-a62e86c8f398/d9c7cd84-a4c0-40ef-86a6-3304f3bfe664.jpg","location":{"@type":"Place","name":"Emery Collegiate Institute","address":{"@type":"PostalAddress","name":"3395 Weston Road Toronto ON, Canada"}}}</script><div class="jsx-4129511253 eapp-events-calendar-date-element-component eapp-events-calendar-grid-item-date eapp-events-calendar-date-element-inline" bis_skin_checked="1"><div class="jsx-4129511253 eapp-events-calendar-date-element-start" bis_skin_checked="1"><div class="jsx-4129511253 eapp-events-calendar-date-element-month" bis_skin_checked="1">May</div><div class="jsx-4129511253 eapp-events-calendar-date-element-day" bis_skin_checked="1">27</div></div></div><div class="jsx-673761447 eapp-events-calendar-grid-item-imageContainer" bis_skin_checked="1"><img alt="Picture for 'House League' event" class="eapp-events-calendar-media-image eapp-events-calendar-media-loaded" src="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/d7afc5c0-bdcb-42e2-880b-a62e86c8f398/d9c7cd84-a4c0-40ef-86a6-3304f3bfe664.jpg"></div><div class="jsx-673761447 eapp-events-calendar-grid-item-info" bis_skin_checked="1"><div class="jsx-1930338694 eapp-events-calendar-name-component eapp-events-calendar-grid-item-name" bis_skin_checked="1">House League</div><div class="jsx-673761447 eapp-events-calendar-grid-item-locationAndTime" bis_skin_checked="1"><div class="jsx-1740322506 eapp-events-calendar-time-component eapp-events-calendar-grid-item-time" bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" class="jsx-1740322506 eapp-events-calendar-time-icon"><path d="M6 12A6 6 0 1 0 6 0a6 6 0 0 0 0 12zm.984-4.97a.454.454 0 0 1-.07.154l-.026.038a.5.5 0 0 1-.655.148L3.55 5.857a.454.454 0 0 1-.149-.655.551.551 0 0 1 .722-.164l1.877 1.059V2.9a.5.5 0 1 1 1 0v4a.5.5 0 0 1-.017.13z" class="jsx-1740322506"></path></svg><div class="jsx-1740322506 eapp-events-calendar-time-text" bis_skin_checked="1"><div class="jsx-1740322506 eapp-events-calendar-time-time" bis_skin_checked="1">6:30 PM - 7:30 PM</div></div></div><div class="jsx-1223560094 eapp-events-calendar-location-component eapp-events-calendar-grid-item-location" bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 10 12" class="jsx-1223560094 eapp-events-calendar-location-icon"><path d="M5 12C1.667 9.174 0 6.84 0 5a5 5 0 1 1 10 0c0 1.84-1.667 4.174-5 7zm0-6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" class="jsx-1223560094"></path></svg><div class="jsx-1223560094 eapp-events-calendar-location-text" bis_skin_checked="1">Emery Collegiate Institute</div></div></div></div></div></div><div class="eapp-events-calendar-grid-item" bis_skin_checked="1"><div class="jsx-673761447 eapp-events-calendar-grid-item-component" bis_skin_checked="1"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"Event","name":"House League","startDate":"2024-05-29","endDate":"2024-05-29","description":"The Asante Soccer Academy House League Program is a co-ed player development program that runs throughout the whole year. It is open to players between the ages of 5 and 13 that have the passion and desire to train and enhance their soccer skills. The purpose of this program is for players to have fun while also developing the fundamentals of soccer. Our mission is for the community to have access to affordable soccer programs, which provide the opportunity to discover and appreciate the game of soccer.","image":"https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/d7afc5c0-bdcb-42e2-880b-a62e86c8f398/d9c7cd84-a4c0-40ef-86a6-3304f3bfe664.jpg","location":{"@type":"Place","name":"Emery Collegiate Institute","address":{"@type":"PostalAddress","name":"3395 Weston Road Toronto ON, Canada"}}}</script><div class="jsx-4129511253 eapp-events-calendar-date-element-component eapp-events-calendar-grid-item-date eapp-events-calendar-date-element-inline" bis_skin_checked="1"><div class="jsx-4129511253 eapp-events-calendar-date-element-start" bis_skin_checked="1"><div class="jsx-4129511253 eapp-events-calendar-date-element-month" bis_skin_checked="1">May</div><div class="jsx-4129511253 eapp-events-calendar-date-element-day" bis_skin_checked="1">29</div></div></div><div class="jsx-673761447 eapp-events-calendar-grid-item-imageContainer" bis_skin_checked="1"><img alt="Picture for 'House League' event" class="eapp-events-calendar-media-image eapp-events-calendar-media-loaded" src="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/d7afc5c0-bdcb-42e2-880b-a62e86c8f398/d9c7cd84-a4c0-40ef-86a6-3304f3bfe664.jpg"></div><div class="jsx-673761447 eapp-events-calendar-grid-item-info" bis_skin_checked="1"><div class="jsx-1930338694 eapp-events-calendar-name-component eapp-events-calendar-grid-item-name" bis_skin_checked="1">House League</div><div class="jsx-673761447 eapp-events-calendar-grid-item-locationAndTime" bis_skin_checked="1"><div class="jsx-1740322506 eapp-events-calendar-time-component eapp-events-calendar-grid-item-time" bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" class="jsx-1740322506 eapp-events-calendar-time-icon"><path d="M6 12A6 6 0 1 0 6 0a6 6 0 0 0 0 12zm.984-4.97a.454.454 0 0 1-.07.154l-.026.038a.5.5 0 0 1-.655.148L3.55 5.857a.454.454 0 0 1-.149-.655.551.551 0 0 1 .722-.164l1.877 1.059V2.9a.5.5 0 1 1 1 0v4a.5.5 0 0 1-.017.13z" class="jsx-1740322506"></path></svg><div class="jsx-1740322506 eapp-events-calendar-time-text" bis_skin_checked="1"><div class="jsx-1740322506 eapp-events-calendar-time-time" bis_skin_checked="1">6:30 PM - 7:30 PM</div></div></div><div class="jsx-1223560094 eapp-events-calendar-location-component eapp-events-calendar-grid-item-location" bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 10 12" class="jsx-1223560094 eapp-events-calendar-location-icon"><path d="M5 12C1.667 9.174 0 6.84 0 5a5 5 0 1 1 10 0c0 1.84-1.667 4.174-5 7zm0-6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" class="jsx-1223560094"></path></svg><div class="jsx-1223560094 eapp-events-calendar-location-text" bis_skin_checked="1">Emery Collegiate Institute</div></div></div></div></div></div><div class="eapp-events-calendar-grid-item" bis_skin_checked="1"><div class="jsx-673761447 eapp-events-calendar-grid-item-component" bis_skin_checked="1"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"Event","name":"House League","startDate":"2024-06-03","endDate":"2024-06-03","description":"The Asante Soccer Academy House League Program is a co-ed player development program that runs throughout the whole year. It is open to players between the ages of 5 and 13 that have the passion and desire to train and enhance their soccer skills. The purpose of this program is for players to have fun while also developing the fundamentals of soccer. Our mission is for the community to have access to affordable soccer programs, which provide the opportunity to discover and appreciate the game of soccer.","image":"https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/d7afc5c0-bdcb-42e2-880b-a62e86c8f398/d9c7cd84-a4c0-40ef-86a6-3304f3bfe664.jpg","location":{"@type":"Place","name":"Emery Collegiate Institute","address":{"@type":"PostalAddress","name":"3395 Weston Road Toronto ON, Canada"}}}</script><div class="jsx-4129511253 eapp-events-calendar-date-element-component eapp-events-calendar-grid-item-date eapp-events-calendar-date-element-inline" bis_skin_checked="1"><div class="jsx-4129511253 eapp-events-calendar-date-element-start" bis_skin_checked="1"><div class="jsx-4129511253 eapp-events-calendar-date-element-month" bis_skin_checked="1">Jun</div><div class="jsx-4129511253 eapp-events-calendar-date-element-day" bis_skin_checked="1">3</div></div></div><div class="jsx-673761447 eapp-events-calendar-grid-item-imageContainer" bis_skin_checked="1"><img alt="Picture for 'House League' event" class="eapp-events-calendar-media-image eapp-events-calendar-media-loaded" src="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/d7afc5c0-bdcb-42e2-880b-a62e86c8f398/d9c7cd84-a4c0-40ef-86a6-3304f3bfe664.jpg"></div><div class="jsx-673761447 eapp-events-calendar-grid-item-info" bis_skin_checked="1"><div class="jsx-1930338694 eapp-events-calendar-name-component eapp-events-calendar-grid-item-name" bis_skin_checked="1">House League</div><div class="jsx-673761447 eapp-events-calendar-grid-item-locationAndTime" bis_skin_checked="1"><div class="jsx-1740322506 eapp-events-calendar-time-component eapp-events-calendar-grid-item-time" bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" class="jsx-1740322506 eapp-events-calendar-time-icon"><path d="M6 12A6 6 0 1 0 6 0a6 6 0 0 0 0 12zm.984-4.97a.454.454 0 0 1-.07.154l-.026.038a.5.5 0 0 1-.655.148L3.55 5.857a.454.454 0 0 1-.149-.655.551.551 0 0 1 .722-.164l1.877 1.059V2.9a.5.5 0 1 1 1 0v4a.5.5 0 0 1-.017.13z" class="jsx-1740322506"></path></svg><div class="jsx-1740322506 eapp-events-calendar-time-text" bis_skin_checked="1"><div class="jsx-1740322506 eapp-events-calendar-time-time" bis_skin_checked="1">6:30 PM - 7:30 PM</div></div></div><div class="jsx-1223560094 eapp-events-calendar-location-component eapp-events-calendar-grid-item-location" bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 10 12" class="jsx-1223560094 eapp-events-calendar-location-icon"><path d="M5 12C1.667 9.174 0 6.84 0 5a5 5 0 1 1 10 0c0 1.84-1.667 4.174-5 7zm0-6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" class="jsx-1223560094"></path></svg><div class="jsx-1223560094 eapp-events-calendar-location-text" bis_skin_checked="1">Emery Collegiate Institute</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-724a287 elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="724a287" data-element_type="widget" data-widget_type="button.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-button-wrapper" bis_skin_checked="1">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://asanteacademy.com/calendar/" bis_skin_checked="1">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">SEE FULL CALENDAR</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-ce4918b elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ce4918b" data-element_type="section" id="coaches" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay" bis_skin_checked="1"></div>
+							<div class="elementor-container elementor-column-gap-no" bis_skin_checked="1">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f2603ff" data-id="f2603ff" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-8017b57 elementor-widget elementor-widget-heading" data-id="8017b57" data-element_type="widget" data-widget_type="heading.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<h2 class="elementor-heading-title elementor-size-default">Coaching Staff</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d093734 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="d093734" data-element_type="widget" data-widget_type="divider.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-divider" bis_skin_checked="1">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5af8de1 elementor-widget elementor-widget-text-editor" data-id="5af8de1" data-element_type="widget" data-widget_type="text-editor.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+							<p><span style="color: #ffffff;">At Asante Soccer Academy, our coaches are qualified and committed to the growth of all our players in both the development and competitive programs that we offer.&nbsp;</span><span style="color: var(--ast-global-color-5); font-size: 1rem;">They are certified, experienced and passionate about the beautiful game of soccer and want to pass on that passion to the next generation of players.</span></p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-43f64be" data-id="43f64be" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-9edbddb elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="9edbddb" data-element_type="widget" data-widget_type="image.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+													<img alt="" class="attachment-large size-large wp-image-2927" height="729" width="1024" data-large-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=1024%2C729&amp;ssl=1" data-medium-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=300%2C213&amp;ssl=1" data-image-caption="" data-image-description="" data-image-title="IMG_8A157A2EF47A-1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-comments-opened="1" data-orig-size="1179,839" data-orig-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=1179%2C839&amp;ssl=1" data-permalink="https://asanteacademy.com/home/img_8a157a2ef47a-1/" data-attachment-id="2927" decoding="async" src="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=1024%2C729&amp;ssl=1" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?w=1179&amp;ssl=1 1179w, https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?resize=300%2C213&amp;ssl=1 300w, https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?resize=1024%2C729&amp;ssl=1 1024w, https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?resize=768%2C547&amp;ssl=1 768w, https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?resize=600%2C427&amp;ssl=1 600w"><noscript><img loading="lazy" decoding="async" data-attachment-id="2927" data-permalink="https://asanteacademy.com/home/img_8a157a2ef47a-1/" data-orig-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=1179%2C839&amp;ssl=1" data-orig-size="1179,839" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="IMG_8A157A2EF47A-1" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=300%2C213&amp;ssl=1" data-large-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=1024%2C729&amp;ssl=1" width="1024" height="729" data-tf-not-load src="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=1024%2C729&amp;ssl=1" class="attachment-large size-large wp-image-2927" alt="" srcset="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?w=1179&amp;ssl=1 1179w, https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?resize=300%2C213&amp;ssl=1 300w, https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?resize=1024%2C729&amp;ssl=1 1024w, https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?resize=768%2C547&amp;ssl=1 768w, https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?resize=600%2C427&amp;ssl=1 600w" sizes="(max-width: 1024px) 100vw, 1024px" data-attachment-id="2927" data-permalink="https://asanteacademy.com/home/img_8a157a2ef47a-1/" data-orig-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=1179%2C839&amp;ssl=1" data-orig-size="1179,839" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="IMG_8A157A2EF47A-1" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=300%2C213&amp;ssl=1" data-large-file="https://i0.wp.com/asanteacademy.com/wp-content/uploads/2023/09/IMG_8A157A2EF47A-1-e1694205945898.jpeg?fit=1024%2C729&amp;ssl=1" /></noscript></div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-743ce3db elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="743ce3db" data-element_type="section" id="testimonials" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no" bis_skin_checked="1">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-58b050b0" data-id="58b050b0" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-3b75efb5 elementor-widget elementor-widget-heading" data-id="3b75efb5" data-element_type="widget" data-widget_type="heading.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<h4 class="elementor-heading-title elementor-size-default">TESTIMONIALS</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-772ef0e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="772ef0e" data-element_type="widget" data-widget_type="divider.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-divider" bis_skin_checked="1">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-584e0a46 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="584e0a46" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default" bis_skin_checked="1">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3b40852d" data-id="3b40852d" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-a89c212 elementor-widget elementor-widget-testimonial" data-id="a89c212" data-element_type="widget" data-widget_type="testimonial.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<style>/*! elementor - v3.21.0 - 30-04-2024 */
+.elementor-testimonial-wrapper{overflow:hidden;text-align:center}.elementor-testimonial-wrapper .elementor-testimonial-content{font-size:1.3em;margin-bottom:20px}.elementor-testimonial-wrapper .elementor-testimonial-name{line-height:1.5;display:block}.elementor-testimonial-wrapper .elementor-testimonial-job{font-size:.85em;display:block}.elementor-testimonial-wrapper .elementor-testimonial-meta{width:100%;line-height:1}.elementor-testimonial-wrapper .elementor-testimonial-meta-inner{display:inline-block}.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-details,.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-image{display:table-cell;vertical-align:middle}.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-image img{width:60px;height:60px;border-radius:50%;-o-object-fit:cover;object-fit:cover;max-width:none}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-image{padding-inline-end:15px}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-details{text-align:start}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-details,.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-image{display:block}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-image{margin-bottom:20px}</style>		<div class="elementor-testimonial-wrapper" bis_skin_checked="1">
+							<div class="elementor-testimonial-content" bis_skin_checked="1">The coaching at Asante Soccer Academy is truly exceptional. The coaches not only focus on enhancing soccer abilities but also emphasize the importance of attitude and discipline. This holistic approach to coaching sets the academy apart.</div>
+			
+						<div class="elementor-testimonial-meta" bis_skin_checked="1">
+				<div class="elementor-testimonial-meta-inner" bis_skin_checked="1">
+					
+										<div class="elementor-testimonial-details" bis_skin_checked="1">
+														<div class="elementor-testimonial-name" bis_skin_checked="1">Osman Ali Mudei</div>
+																						<div class="elementor-testimonial-job" bis_skin_checked="1">Family Member</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6724921f" data-id="6724921f" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-1b89d1b elementor-widget elementor-widget-testimonial" data-id="1b89d1b" data-element_type="widget" data-widget_type="testimonial.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-testimonial-wrapper" bis_skin_checked="1">
+							<div class="elementor-testimonial-content" bis_skin_checked="1">Our son has learned so much of the game of soccer.   He has met new people and made friends, learned of different cultures and beliefs.
+We would encourage anyone who is looking for the next level, the complete package to come join The Asante Soccer Academy.</div>
+			
+						<div class="elementor-testimonial-meta" bis_skin_checked="1">
+				<div class="elementor-testimonial-meta-inner" bis_skin_checked="1">
+					
+										<div class="elementor-testimonial-details" bis_skin_checked="1">
+														<div class="elementor-testimonial-name" bis_skin_checked="1">Rosa Giuliani</div>
+																						<div class="elementor-testimonial-job" bis_skin_checked="1">Parent</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6ce0554f" data-id="6ce0554f" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-7c84f127 elementor-widget elementor-widget-testimonial" data-id="7c84f127" data-element_type="widget" data-widget_type="testimonial.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-testimonial-wrapper" bis_skin_checked="1">
+							<div class="elementor-testimonial-content" bis_skin_checked="1">The Asante Soccer Academy is more than just an academy, it is a family.  From the moment we started with the academy we were welcomed with open arms from all.  The coaches’ common goal is to put the children’s needs first and to never leave a child unnoticed.  </div>
+			
+						<div class="elementor-testimonial-meta" bis_skin_checked="1">
+				<div class="elementor-testimonial-meta-inner" bis_skin_checked="1">
+					
+										<div class="elementor-testimonial-details" bis_skin_checked="1">
+														<div class="elementor-testimonial-name" bis_skin_checked="1">Sal Salvato</div>
+																						<div class="elementor-testimonial-job" bis_skin_checked="1">Parent and Team Manager</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-743ce3db elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="743ce3db" data-element_type="section" id="testimonials" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no" bis_skin_checked="1">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-58b050b0" data-id="58b050b0" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-3b75efb5 elementor-widget elementor-widget-heading" data-id="3b75efb5" data-element_type="widget" data-widget_type="heading.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<h4 class="elementor-heading-title elementor-size-default">TESTIMONIALS</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-772ef0e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="772ef0e" data-element_type="widget" data-widget_type="divider.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-divider" bis_skin_checked="1">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-584e0a46 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="584e0a46" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default" bis_skin_checked="1">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3b40852d" data-id="3b40852d" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-a89c212 elementor-widget elementor-widget-testimonial" data-id="a89c212" data-element_type="widget" data-widget_type="testimonial.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+			<style>/*! elementor - v3.21.0 - 30-04-2024 */
+.elementor-testimonial-wrapper{overflow:hidden;text-align:center}.elementor-testimonial-wrapper .elementor-testimonial-content{font-size:1.3em;margin-bottom:20px}.elementor-testimonial-wrapper .elementor-testimonial-name{line-height:1.5;display:block}.elementor-testimonial-wrapper .elementor-testimonial-job{font-size:.85em;display:block}.elementor-testimonial-wrapper .elementor-testimonial-meta{width:100%;line-height:1}.elementor-testimonial-wrapper .elementor-testimonial-meta-inner{display:inline-block}.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-details,.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-image{display:table-cell;vertical-align:middle}.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-image img{width:60px;height:60px;border-radius:50%;-o-object-fit:cover;object-fit:cover;max-width:none}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-image{padding-inline-end:15px}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-details{text-align:start}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-details,.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-image{display:block}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-image{margin-bottom:20px}</style>		<div class="elementor-testimonial-wrapper" bis_skin_checked="1">
+							<div class="elementor-testimonial-content" bis_skin_checked="1">The coaching at Asante Soccer Academy is truly exceptional. The coaches not only focus on enhancing soccer abilities but also emphasize the importance of attitude and discipline. This holistic approach to coaching sets the academy apart.</div>
+			
+						<div class="elementor-testimonial-meta" bis_skin_checked="1">
+				<div class="elementor-testimonial-meta-inner" bis_skin_checked="1">
+					
+										<div class="elementor-testimonial-details" bis_skin_checked="1">
+														<div class="elementor-testimonial-name" bis_skin_checked="1">Osman Ali Mudei</div>
+																						<div class="elementor-testimonial-job" bis_skin_checked="1">Family Member</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6724921f" data-id="6724921f" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-1b89d1b elementor-widget elementor-widget-testimonial" data-id="1b89d1b" data-element_type="widget" data-widget_type="testimonial.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-testimonial-wrapper" bis_skin_checked="1">
+							<div class="elementor-testimonial-content" bis_skin_checked="1">Our son has learned so much of the game of soccer.   He has met new people and made friends, learned of different cultures and beliefs.
+We would encourage anyone who is looking for the next level, the complete package to come join The Asante Soccer Academy.</div>
+			
+						<div class="elementor-testimonial-meta" bis_skin_checked="1">
+				<div class="elementor-testimonial-meta-inner" bis_skin_checked="1">
+					
+										<div class="elementor-testimonial-details" bis_skin_checked="1">
+														<div class="elementor-testimonial-name" bis_skin_checked="1">Rosa Giuliani</div>
+																						<div class="elementor-testimonial-job" bis_skin_checked="1">Parent</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6ce0554f" data-id="6ce0554f" data-element_type="column" bis_skin_checked="1">
+			<div class="elementor-widget-wrap elementor-element-populated" bis_skin_checked="1">
+						<div class="elementor-element elementor-element-7c84f127 elementor-widget elementor-widget-testimonial" data-id="7c84f127" data-element_type="widget" data-widget_type="testimonial.default" bis_skin_checked="1">
+				<div class="elementor-widget-container" bis_skin_checked="1">
+					<div class="elementor-testimonial-wrapper" bis_skin_checked="1">
+							<div class="elementor-testimonial-content" bis_skin_checked="1">The Asante Soccer Academy is more than just an academy, it is a family.  From the moment we started with the academy we were welcomed with open arms from all.  The coaches’ common goal is to put the children’s needs first and to never leave a child unnoticed.  </div>
+			
+						<div class="elementor-testimonial-meta" bis_skin_checked="1">
+				<div class="elementor-testimonial-meta-inner" bis_skin_checked="1">
+					
+										<div class="elementor-testimonial-details" bis_skin_checked="1">
+														<div class="elementor-testimonial-name" bis_skin_checked="1">Sal Salvato</div>
+																						<div class="elementor-testimonial-job" bis_skin_checked="1">Parent and Team Manager</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script></body>
+</html>
